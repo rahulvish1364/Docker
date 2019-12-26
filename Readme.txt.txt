@@ -18,3 +18,10 @@ commands
  
  c + d to exit this terminal to the your bash terminal
  
+ Stop Container image
+ Some Commands
+ docker stop "id" recommended
+ docker kill "id" 
+ 
+ 
+ 
