@@ -23,5 +23,3 @@ commands
  docker stop "id" recommended
  docker kill "id" 
  
- 
- 
