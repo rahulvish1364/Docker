@@ -9,7 +9,7 @@ First image from docker hub
 commands 
 
  docker ps -all 
- logs all the activity that happened with docker
+ logs all the processes/image that are running in the docker 
 
  //accessing docker terminal
  winpty docker exec -it 0937ee5d6f58 bash 	
