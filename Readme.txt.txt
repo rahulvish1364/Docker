@@ -19,7 +19,36 @@ commands
  c + d to exit this terminal to the your bash terminal
  
  Stop Container image
- Some Commands
+ Some Commands		
  docker stop "id" recommended
  docker kill "id" 
  
+ // Caching about command
+ 
+ Accessing container shell
+ 
+ winpty docker exec -it "CONTAINER ID" sh
+ 
+ 
+ Each commands is a step in image creation.
+ Commands are cached and next any image is created then that cached container is used in which that command is running
+so it make the image creation process insanely fast. Because it won't be creating the image from the scratch. 
+ 
+ // Naming docker containers
+ 
+ We can give the container while creating it with the Dockerfile.
+ docker build -t rahul/mymongo:latest .
+ 
+ // . in the end is important
+ 
+ rahul any username / name of your container 
+ 
+ running container with the name
+ 
+ docker run rahul/mymongo
+ 
+ or 
+ docker run rahul/mymongo:latest
+ 
+ it doest'nt matter if you give tag name
+ in case you want to run or build any perticular version you can give the version while creating.
