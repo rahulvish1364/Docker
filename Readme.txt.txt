@@ -52,3 +52,22 @@ so it make the image creation process insanely fast. Because it won't be creatin
  
  it doest'nt matter if you give tag name
  in case you want to run or build any perticular version you can give the version while creating.
+ 
+ 
+ 
+--------------------------------------- Next Step Learning ------------------------------------------------
+Creating the Node app
+
+Adding node see dockerfile
+
+then build using docker build -t rahul/nodeapp
+
+
+docker run rahul/nodeapp
+
+this will run app in the container on given port eg 8000
+
+docker run -p 8000:8000 rahul/nodeapp
+
+first port your machine code
+second port is container which can connected to your port
