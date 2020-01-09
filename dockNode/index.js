@@ -12,7 +12,16 @@ app.get('/', (req, res) =>{
 app.get('/entity', (req, res)=>{
     res.send(entity);
 });
-
+app.get('/login', (req, res)=>{
+    res.json({
+        message : 'Login Route'
+    });
+});
+app.get('/logout', (req, res)=>{
+    res.json({
+        message: 'Logout Route'
+    })
+});
 app.listen(8000, ()=>{
     console.log('App is running on port 8000');
 });
