@@ -60,7 +60,7 @@ Creating the Node app
 
 Adding node see dockerfile
 
-then build using docker build -t rahul/nodeapp
+then build using docker build -t rahul/nodeapp .
 
 
 docker run rahul/nodeapp
@@ -71,3 +71,6 @@ docker run -p 8000:8000 rahul/nodeapp
 
 first port your machine code
 second port is container which can connected to your port
+
+Performance improvement can be done by adding the pakage.json file first and then copying the new code in the working directory.
+
